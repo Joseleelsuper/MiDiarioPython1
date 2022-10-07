@@ -16,8 +16,8 @@ def multip(lista):
     print("La multiplicación de los números de la lista es: ",x)
 
 def main():
-    lista = [0]*100
     x = int(input("Cuantos números quieres en la lista: "))
+    lista = [0]*x
     for i in range(x):
         lista[i] = int(input(f"Escribe el número {i+1}: "))
     lista = lista[:x]
